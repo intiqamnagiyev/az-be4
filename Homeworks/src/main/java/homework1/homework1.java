@@ -7,7 +7,7 @@ public class homework1 {
     public static void main(String[] args) {
         int x = new Random().nextInt(100);
         Scanner scanner = new Scanner(System.in);
-        Integer [] arr = new Integer[101];
+        int [] arr = new int[101];
         System.out.println("hidden number: "+x);
         System.out.print("Please enter your name:");
         String playerName = scanner.next();
