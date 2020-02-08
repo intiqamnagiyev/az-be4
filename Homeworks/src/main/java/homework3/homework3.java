@@ -15,21 +15,21 @@ public class homework3 {
         scedule[2][0] = "Thuesday";
         scedule[2][1] = "go to cinema";
 
-        scedule[3][0] ="Wednesday";
-        scedule[3][1] ="to do smth on wednesday";
+        scedule[3][0] = "Wednesday";
+        scedule[3][1] = "to do smth on wednesday";
 
-        scedule[4][0] ="Thrusday";
-        scedule[4][1] ="to do smth on Thrusday";
+        scedule[4][0] = "Thrusday";
+        scedule[4][1] = "to do smth on Thrusday";
 
-        scedule[5][0] ="Friday";
-        scedule[5][1] ="to do smth on Friday";
+        scedule[5][0] = "Friday";
+        scedule[5][1] = "to do smth on Friday";
 
-        scedule[6][0] ="Saturday";
-        scedule[6][1] ="to do smth on Saturday";
+        scedule[6][0] = "Saturday";
+        scedule[6][1] = "to do smth on Saturday";
 
 
         String dayOfWeek = "";
-       
+
         while (true) {
             System.out.print("Please, input the day of the week: ");
             dayOfWeek = scanner.next().toLowerCase();
