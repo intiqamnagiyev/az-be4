@@ -7,6 +7,6 @@ public class warmup {
         Scanner scanner = new Scanner(System.in);
         System.out.println("Hello, what is your name?");
         String name = scanner.next();
-        System.out.println("Hello "+name+"\nNice to meet you, "+name+"\ngjcBye!");
+        System.out.println("Hello "+name+"\nNice to meet you, "+name+"\nBye!");
     }
 }
