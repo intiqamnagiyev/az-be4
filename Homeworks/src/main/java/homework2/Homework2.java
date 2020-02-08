@@ -53,9 +53,9 @@ public class Homework2 {
 
 
             }
-            if (enteredRow==randomRow && enteredBar ==randomBar){
+            if (enteredRow == randomRow && enteredBar == randomBar) {
                 arr[randomRow][randomBar] = "x";
-            }else {
+            } else {
 
                 arr[enteredRow][enteredBar] = "*";
             }
@@ -65,7 +65,7 @@ public class Homework2 {
                 }
                 System.out.println();
             }
-            if (enteredRow==randomRow && enteredBar ==randomBar){
+            if (enteredRow == randomRow && enteredBar == randomBar) {
                 System.out.println("You have won!");
                 break;
             }
