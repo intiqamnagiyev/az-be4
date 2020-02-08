@@ -2,7 +2,7 @@ package warmup;
 
 import java.util.Random;
 
-public class warmup {
+public class ArraysApp {
     public static void main(String[] args) {
         Random random = new Random();
         int max=11;
