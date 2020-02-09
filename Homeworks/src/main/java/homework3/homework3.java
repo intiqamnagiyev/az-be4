@@ -5,27 +5,27 @@ import java.util.Scanner;
 public class homework3 {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
-        String[][] scedule = new String[7][2];
-        scedule[0][0] = "Sunday";
-        scedule[0][1] = "do home work";
+        String[][] schedule = new String[7][2];
+        schedule[0][0] = "Sunday";
+        schedule[0][1] = "do home work";
 
-        scedule[1][0] = "Monday";
-        scedule[1][1] = "go to courses; watch a film";
+        schedule[1][0] = "Monday";
+        schedule[1][1] = "go to courses; watch a film";
 
-        scedule[2][0] = "Thuesday";
-        scedule[2][1] = "go to cinema";
+        schedule[2][0] = "Thuesday";
+        schedule[2][1] = "go to cinema";
 
-        scedule[3][0] = "Wednesday";
-        scedule[3][1] = "to do smth on wednesday";
+        schedule[3][0] = "Wednesday";
+        schedule[3][1] = "to do smth on wednesday";
 
-        scedule[4][0] = "Thrusday";
-        scedule[4][1] = "to do smth on Thrusday";
+        schedule[4][0] = "Thrusday";
+        schedule[4][1] = "to do smth on Thrusday";
 
-        scedule[5][0] = "Friday";
-        scedule[5][1] = "to do smth on Friday";
+        schedule[5][0] = "Friday";
+        schedule[5][1] = "to do smth on Friday";
 
-        scedule[6][0] = "Saturday";
-        scedule[6][1] = "to do smth on Saturday";
+        schedule[6][0] = "Saturday";
+        schedule[6][1] = "to do smth on Saturday";
 
 
         String dayOfWeek = "";
