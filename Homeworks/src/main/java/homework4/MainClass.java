@@ -13,7 +13,8 @@ public class MainClass {
         Human child = new Human("Michael", "Karleone", 1977, 90, dog, mother, father, new String[][]{});
 
 
-        System.out.println(child);
+        child.print(child);
+
 
     }
 
