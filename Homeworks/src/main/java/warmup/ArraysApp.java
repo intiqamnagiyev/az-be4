@@ -7,7 +7,7 @@ public class ArraysApp {
         Random random = new Random();
         int max=11;
         int[] a = new int[10];
-        for (int i = 0; i < 10; i++) {
+        for (int i = 0; i <a.length; i++) {
             a[i] = random.nextInt(max);
         }
         for (int i = 0; i <10 ; i++) {
