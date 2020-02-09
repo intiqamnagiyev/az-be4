@@ -10,7 +10,7 @@ public class ArraysApp {
         for (int i = 0; i <a.length; i++) {
             a[i] = random.nextInt(max);
         }
-        for (int i = 0; i <10 ; i++) {
+        for (int i = 0; i <a.length ; i++) {
             System.out.print(a[i]+" ");
         }
     }
