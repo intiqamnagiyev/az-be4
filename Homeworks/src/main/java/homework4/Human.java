@@ -1,5 +1,6 @@
 package homework4;
 
+import java.sql.SQLOutput;
 import java.util.Arrays;
 
 public class Human {
@@ -125,6 +126,18 @@ public class Human {
                 pet.getSpecies(), pet.getAge(), pet.getAge() > 50 ? "very sly" : "almost not sly");
     }
 
+    public void print(Human human) {
+        System.out.println("Human{" +
+                "name='" + name + '\'' +
+                ", surname='" + surname + '\'' +
+                ", birthDate=" + birthDate +
+                ", iq=" + iq +
+                ", pet=" + pet +
+                ", mother=" + mother.getName() + " " + mother.getSurname() +
+                ", father=" + father.getName() + " " + father.getSurname() +
+                ", schedule=" + Arrays.toString(schedule) +
+                "}");
+    }
 
     @Override
     public String toString() {
@@ -137,6 +150,6 @@ public class Human {
                 ", mother=" + mother +
                 ", father=" + father +
                 ", schedule=" + Arrays.toString(schedule) +
-                '}';
+                "}";
     }
 }
