@@ -1,6 +1,5 @@
 package homework4;
 
-import java.sql.SQLOutput;
 import java.util.Arrays;
 
 public class Human {
@@ -14,6 +13,12 @@ public class Human {
     private String[][] schedule;
 
     public Human() {
+        this.name = "";
+        this.surname = "";
+        this.birthDate = 0;
+        this.iq = 0;
+        this.pet = new Pet();
+
 
     }
 
@@ -21,6 +26,11 @@ public class Human {
         this.name = name;
         this.surname = surname;
         this.birthDate = birthDate;
+        this.iq = 0;
+        this.pet = new Pet();
+        this.mother = new Human();
+        this.father = new Human();
+
     }
 
     public Human(String name, String surname, int birthDate, Human mother, Human father) {
@@ -29,9 +39,12 @@ public class Human {
         this.birthDate = birthDate;
         this.mother = mother;
         this.father = father;
+        this.pet = new Pet();
+        this.mother = new Human();
+        this.father = new Human();
     }
 
-    public Human(String name, String surname, int birthDate, int iq, Pet pet, Human mother, Human father, String[][] schedule) {
+    public Human(String name, String surname, int birthDate, Human mother, Human father, int iq, Pet pet, String[][] schedule) {
         this.name = name;
         this.surname = surname;
         this.birthDate = birthDate;
@@ -117,13 +130,13 @@ public class Human {
     }
 
     public void greetPet() {
-        System.out.println("Hello, " + pet);
+        System.out.println("Hello, " + pet.getNickname());
     }
 
     public void describePet() {
 
         System.out.printf("I have %s , he is %d years old, he is %s\n",
-                pet.getSpecies(), pet.getAge(), pet.getAge() > 50 ? "very sly" : "almost not sly");
+                pet.getSpecies(), pet.getAge(), pet.getTrickLevel() > 50 ? "very sly" : "almost not sly");
     }
 
     public void print(Human human) {

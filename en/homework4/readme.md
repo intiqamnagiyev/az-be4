@@ -6,7 +6,8 @@ Before you get to the "Collections" topic - all the homeworks must be done using
 # Objects
 ## Task
 
-Create and describe these classes:  (`Pet`), (`Human`). Create constructors for the classes you have written. Create the `Main` class and the examples of the described classes in it. 
+Create and describe these classes:  (`Pet`), (`Human`). 
+Create constructors for the classes you have written. Create the `Main` class and the examples of the described classes in it. 
 
 #### Technical requirements: 
 - Describe the Pet with the following fields:
@@ -33,7 +34,8 @@ Create and describe these classes:  (`Pet`), (`Human`). Create constructors for 
   - (`describePet`): (display the information about your pet: "I have a [species], he is [age] years old, he is [very sly]>50/[almost not sly]<50". 
 - Redefine the  `toString()` method for bot classes;
   - The Pet class must display the following message: `dog{nickname='Rock', age=5, trickLevel=75, habits=[eat, drink, sleep]}`, where `dog` = species;
-  - The Human class must display the following message: `Human{name='Michael', surname='Karleone', year=1977, iq=90, mother=Jane Karleone, father=Vito Karleone, pet=dog{nickname='Rock', age=5, trickLevel=75, habits=[eat, drink, sleep]}}`
+  - The Human class must display the following message: `Human{name='Michael', surname='Karleone', year=1977, iq=90, 
+  mother=Jane Karleone, father=Vito Karleone, pet=dog{nickname='Rock', age=5, trickLevel=75, habits=[eat, drink, sleep]}}`
 - In class `Pet` create constructors:
   - constructor which describes the pet's species an nickname 
   - constructor which describes all the fields for the pet
@@ -44,11 +46,15 @@ Create and describe these classes:  (`Pet`), (`Human`). Create constructors for 
   - constructor which describes all the fields 
   - empty constructor 
 - In the Main class create several families, so that every class uses all the available constructors. Display data about every person.
-- In the Main class: create a mother, father, child and his pet. Specify all the needed links (for child to his parents and to the pet), in order to form a full family. Call all available methods for the child (including  `toString()` method) and his pet.
+- In the Main class: create a mother, father, child and his pet. Specify all the needed links (for child to his parents and to the pet), 
+in order to form a full family. Call all available methods for the child (including  `toString()` method) and his pet.
 
 
 #### Non-obligatory task with advanced complexity:
-Describe and implement the  (`feedPet`) method in the Human class, which accepts a logical boolean type as a parameter ("isn't it time for feeding "). If it is time - the owner feeds the pet, if not - the trick level is compared to a pseudorandom number of 0-100 using `java.util.Random` and the owner feeds the pet if the trick level is greater than the generated number. The method should display the following result: (`Hm... I will feed Jack's [animal name]/`/`I think Jack is not hungry.`) and return a boolean value (`true/false`) - whether the feeding happened or not.
+Describe and implement the  (`feedPet`) method in the Human class, 
+which accepts a logical boolean type as a parameter ("isn't it time for feeding ").
+ If it is time - the owner feeds the pet, if not - the trick level is compared to a pseudorandom number of 0-100 using `java.util.Random` and the owner feeds the pet if the trick level is greater than the generated number.
+  The method should display the following result: (`Hm... I will feed Jack's [animal name]/`/`I think Jack is not hungry.`) and return a boolean value (`true/false`) - whether the feeding happened or not.
 
 #### Литература:
 - [Classes and objects](https://www.geeksforgeeks.org/classes-objects-java/)
