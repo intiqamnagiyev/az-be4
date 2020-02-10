@@ -1,23 +1,12 @@
 package warmup;
 
-import java.util.Random;
+
+import java.sql.Array;
+import java.util.Arrays;
 
 public class ArraysApp {
-    public static void main1(String[] args) {
+    private static void modify(int x, int y,int [] arr) {
+     int [] array =new int[]{1,23,4,5,6};
 
-        int max = 10;
-
-
-        int[] a = new int[10];
-        for (int i = 0; i < a.length; i++) {
-            int r = (int) (Math.random() * max + 1);
-            a[i] = r;
-        }
-        for (int i = 0; i < a.length; i++) {
-            System.out.print(a[i] + " ");
-        }
     }
-
-
-
 }

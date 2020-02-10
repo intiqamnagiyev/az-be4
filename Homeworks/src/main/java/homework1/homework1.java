@@ -19,8 +19,7 @@ public class homework1 {
             System.out.print("enter num:  ");
             int playersNum = scanner.nextInt();
 
-            arr[i] = playersNum;
-            i++;
+            arr[i++] = playersNum;
             if (playersNum == hiddenNum) {
                 System.out.println("Congratulations " + playerName + "!");
                 System.out.print("Your numbers:");

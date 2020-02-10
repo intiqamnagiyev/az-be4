@@ -41,29 +41,9 @@ public class Homework2 {
 
         System.out.println(randomRow);
         System.out.println(randomBar);
-       /* Object[][] arr = new Object[6][6];
-        for (int i = 0; i < 6; i++) {
 
-            for (int j = 0; j < 6; j++) {
-                if (i == 0) {
-                    arr[i][j] = j;
-                } else if (j != 0) {
-                    arr[i][j] = "-";
-                } else {
-                    arr[i][j] = i;
-                }
-
-            }
-        }*/
         Object[][] arr = generateArray();
-        // arr[randomRow][randomBar] = "x";
 
-       /* for (int j = 0; j < 6; j++) {
-            for (int k = 0; k < 6; k++) {
-                System.out.print(arr[j][k] + "|");
-            }
-            System.out.println();
-        }*/
         printInitArray(arr);
         System.out.println("======");
         System.out.println("All set. Get ready to rumble!");
