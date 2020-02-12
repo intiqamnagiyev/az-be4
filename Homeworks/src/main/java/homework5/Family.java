@@ -58,11 +58,12 @@ public class Family {
     public boolean deleteChild(int index) {
         if (index >= 0 && index < this.children.length) {
             Human temp = this.children[index];
-            for (int i = index + 1; i < this.countOfChildren; i++) {
+            for (int i = index + 1; i <= this.countOfChildren; i++) {
                 this.children[i - 1] = this.children[i];
             }
-            this.children[this.countOfChildren - 1] = temp;
+
             this.countOfChildren--;
+            System.out.println(temp + " deleted");
             return true;
         } else {
             return false;
@@ -74,8 +75,9 @@ public class Family {
         this.children[this.countOfChildren] = child;
         this.countOfChildren++;
     }
-    public int countFamily(){
-        return this.countOfChildren+2;
+
+    public int countFamily() {
+        return this.countOfChildren + 2;
     }
 
     @Override

@@ -58,7 +58,7 @@ public class Family {
     public boolean deleteChild(int index) {
         if (index >= 0 && index < this.children.length) {
             Human temp = this.children[index];
-            for (int i = index + 1; i < this.countOfChildren; i++) {
+            for (int i = index + 1; i <= this.countOfChildren; i++) {
                 this.children[i - 1] = this.children[i];
             }
 

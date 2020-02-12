@@ -8,6 +8,9 @@ public class Human {
     private String surname;
     private int birthDate;
     private int iq;
+    private Family family;
+    private String[][] schedule;
+
 
     public Family getFamily() {
         return family;
@@ -16,10 +19,6 @@ public class Human {
     public void setFamily(Family family) {
         this.family = family;
     }
-
-    private Family family;
-
-    private String[][] schedule;
 
     public Human() {
         this.name = "";

@@ -1,6 +1,8 @@
 package homework6;
 
 import java.util.Arrays;
+import java.util.HashSet;
+import java.util.Set;
 
 public class MainClass {
     public static void main(String[] args) {
@@ -13,7 +15,8 @@ public class MainClass {
         Pet dog = new Pet(Species.DOG, "Dreyk", 4, 60, new String[]{"eat"});
 
         Family family = new Family(mother, father, children, dog);
-
+        Set<String> strings=new HashSet<>();
+        strings.add(null);
         family.addChild(child1);
         System.out.println(family);
         family.addChild(child2);
